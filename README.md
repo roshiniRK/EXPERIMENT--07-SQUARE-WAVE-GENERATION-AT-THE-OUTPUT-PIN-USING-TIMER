@@ -96,39 +96,61 @@ Step14. click on debug and simulate using simulation as shown below
   
 
 ## STM 32 CUBE PROGRAM :
-
-
-
-
+```
+Developed by:ROSHINI R K
+Register number:212222230123
+  HAL_TIM_Base_Start(&htim2);
+  HAL_TIM_PWM_Init(&htim2);
+  HAL_TIM_PWM_Start(&htim2,TIM_CHANNEL_1);
+```
 
 ## Output screen shots of proteus  :
+![WhatsApp Image 2023-10-11 at 14 30 39_6cf94901](https://github.com/roshiniRK/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/118956165/f1d09efd-d0df-476d-93c4-22a72091742c)
+![WhatsApp Image 2023-10-11 at 14 31 09_80c6928a](https://github.com/roshiniRK/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/118956165/6f7d0648-90ba-4238-a7f4-19296bbd9106)
+![WhatsApp Image 2023-10-11 at 14 36 53_4f5ab4e2](https://github.com/roshiniRK/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/118956165/9f6417fc-f72c-4d2b-9301-9dce15c4b1ee)
+
+
+
  
  
- ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
+ ## CIRCUIT DIAGRAM :
+ ![WhatsApp Image 2023-10-11 at 14 39 02_68506ff9](https://github.com/roshiniRK/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/118956165/75019fda-5ce9-4f06-9e45-f1afaa98d3b0)
+
+ 
+ 
+ 
+ ## DUTY CYCLE AND FREQUENCY CALCULATION 
+## FOR PULSE AT 500
+
+Total Time period =4.1ms
+TON = 2ms
+TOFF= 2ms
+TOTAL TIME = 4 
+FREQUENCY = 1/(TOTAL TIME)
+= 1/(410^-3)
+= 250Hz
+
+## FOR PULSE AT 700
+
+Total Time period = 3.11ms
+TON =  2.17ms
+TOFF= 0.93ms
+TOTAL TIME = 3.1 
+FREQUENCY = 1/(TOTAL TIME)
+= 1/(3.110^-3)
+= 322.58Hz
+
+## FOR PULSE AT 900
+
+Total Time period = 3.21ms
+TON = 2.88ms
+TOFF= 0.32ms
+TOTAL TIME = 3.2 
+FREQUENCY = 1/(TOTAL TIME)
+= 1/(3.210^-30
+= 312.5Hz
  
 
-## DUTY CYCLE AND FREQUENCY CALCULATION 
-FOR PULSE AT 500
-
-TON = 
-TOFF=
-TOTAL TIME = 
-FREQUENCY = 1/(TOTAL TIME)
-
-FOR PULSE AT 700
-
-TON = 
-TOFF=
-TOTAL TIME = 
-FREQUENCY = 1/(TOTAL TIME)
-
-
-FOR PULSE AT 900
-
-TON = 
-TOFF=
-TOTAL TIME = 
-FREQUENCY = 1/(TOTAL TIME)
 
 
 ## Result :
