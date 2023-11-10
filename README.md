@@ -91,74 +91,52 @@ Step14. click on debug and simulate using simulation as shown below
  ![image](https://github.com/vasanthkumarch/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/36288975/b8efbfc2-f0c5-4106-8117-3a6e7ac87f6c)
 
 
- 
-
-  
-
 ## STM 32 CUBE PROGRAM :
 ```
-Developed by:ROSHINI R K
-Register number:212222230123
-  HAL_TIM_Base_Start(&htim2);
-  HAL_TIM_PWM_Init(&htim2);
-  HAL_TIM_PWM_Start(&htim2,TIM_CHANNEL_1);
+DEVELOPED BY: ROSHINI RK 
+REGISTER NO.: 212222230123
 ```
-
-## Output screen shots of proteus  :
-![WhatsApp Image 2023-10-11 at 14 30 39_6cf94901](https://github.com/roshiniRK/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/118956165/f1d09efd-d0df-476d-93c4-22a72091742c)
-![WhatsApp Image 2023-10-11 at 14 31 09_80c6928a](https://github.com/roshiniRK/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/118956165/6f7d0648-90ba-4238-a7f4-19296bbd9106)
-![WhatsApp Image 2023-10-11 at 14 36 53_4f5ab4e2](https://github.com/roshiniRK/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/118956165/9f6417fc-f72c-4d2b-9301-9dce15c4b1ee)
-
-
-
- 
- 
- ## CIRCUIT DIAGRAM :
- ![WhatsApp Image 2023-10-11 at 14 39 02_68506ff9](https://github.com/roshiniRK/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/118956165/75019fda-5ce9-4f06-9e45-f1afaa98d3b0)
-
- 
- 
- 
- ## DUTY CYCLE AND FREQUENCY CALCULATION 
-## FOR PULSE AT 500
 ```
-Total Time period =4.1ms
-TON = 2ms
-TOFF= 2ms
+HAL_TIM_Base_Start(&htim2);
+HAL_TIM_PWM_Init(&htim2);
+HAL_TIM_PWM_Start(&htim2,TIM_CHANNEL_1);
+```
+## Output screen shots of proteus :
+![image](https://github.com/SASIDEVIvenaram/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/118707332/039d3cc4-0bdb-4c43-9a79-82a249d6f4d5)
+
+## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE):
+![image](https://github.com/SASIDEVIvenaram/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/118707332/36b6579e-3106-4bda-9f0a-71abfa720a99)
+
+
+## DUTY CYCLE AND FREQUENCY CALCULATION
+### FOR PULSE AT 500
+![image](https://github.com/SASIDEVIvenaram/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/118707332/e4ffa0c7-311f-411d-b2c6-be627a3b546b)
+
+```
+TON = 2
+TOFF=2 
+TOTAL TIME = 4
+FREQUENCY = 1/(TOTAL TIME)
+FREQUENCY = 250Hz
+```
+### FOR PULSE AT 700
+![image](https://github.com/SASIDEVIvenaram/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/118707332/0c134c2a-43d2-4dff-98dd-33d11151273f)
+```
+TON = 3
+TOFF=1 
+TOTAL TIME = 4
+FREQUENCY = 1/(TOTAL TIME)
+FREQUENCY =250Hz
+```
+### FOR PULSE AT 900
+![image](https://github.com/SASIDEVIvenaram/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/118707332/4a4f5919-dbbb-4e79-ac7f-e4f018965f6e)
+
+```
+TON = 3.5 
+TOFF=0.5 
 TOTAL TIME = 4 
 FREQUENCY = 1/(TOTAL TIME)
-= 1/(410^-3)
-= 250Hz
+FREQUENCY=250Hz
 ```
-
-## FOR PULSE AT 700
-
-```
-Total Time period = 3.11ms
-TON =  2.17ms
-TOFF= 0.93ms
-TOTAL TIME = 3.1 
-FREQUENCY = 1/(TOTAL TIME)
-= 1/(3.110^-3)
-= 322.58Hz
-```
-
-## FOR PULSE AT 900
-```
-Total Time period = 3.21ms
-TON = 2.88ms
-TOFF= 0.32ms
-TOTAL TIME = 3.2 
-FREQUENCY = 1/(TOTAL TIME)
-= 1/(3.210^-30
-= 312.5Hz
-``` 
-
-
-
 ## Result :
-A PWM Signal is generated using the following frequency and various duty cycles are simulated 
-
-
-
-
+A PWM Signal is generated using the following frequency and various duty cycles are simulated
